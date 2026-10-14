@@ -1,0 +1,27 @@
+projection;
+strict ( 2 );
+use draft;
+
+define behavior for ZC_KILN_HDR alias KilnHeader
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Items { create; with draft; }
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+}
+
+
+define behavior for ZC_KILN_ITM alias KilnItem
+{
+  use update;
+  use delete;
+
+  use association _Header { with draft; }
+}

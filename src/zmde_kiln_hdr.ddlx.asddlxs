@@ -1,0 +1,70 @@
+@Metadata.layer: #CORE
+
+@UI: {
+  headerInfo: {
+    typeName: 'Kiln Cycle',
+    typeNamePlural: 'Kiln Cycles',
+    title: {
+      type: #STANDARD,
+      value: 'KilnCycle'
+    }
+  }
+}
+
+annotate entity ZC_KILN_HDR with
+{
+    @UI.facet: [
+      {
+        id: 'KilnCycleDetails',
+        purpose: #STANDARD,
+        type: #IDENTIFICATION_REFERENCE,
+        label: 'Kiln Cycle Details',
+        position: 10
+      },
+      {
+        id: 'SerialNumberAssignment',
+        purpose: #STANDARD,
+        type: #LINEITEM_REFERENCE,
+        label: 'Serial Number Assignment',
+        position: 20,
+        targetElement: '_Items'
+      }
+    ]
+
+    /* 1. Kiln Cycle Number */
+    @UI.selectionField: [{ position: 10 }]
+    @UI.identification: [{ position: 10, label: 'Kiln Cycle Number' }]
+    @UI.lineItem:       [{ position: 10, label: 'Kiln Cycle Number' }]
+    KilnCycle;
+
+    /* 2. Kiln No */
+    @UI.selectionField: [{ position: 20 }]
+    @UI.identification: [{ position: 20, label: 'Kiln No' }]
+    @UI.lineItem:       [{ position: 20, label: 'Kiln No' }]
+    KilnNo;
+    
+       @UI.selectionField: [{ position: 25 }]
+    @UI.identification: [{ position: 25, label: 'Loading Start Date' }]
+    @UI.lineItem:       [{ position: 25, label: 'Loading Start Date' }]
+    StartDate;
+    
+       @UI.selectionField: [{ position: 30 }]
+    @UI.identification: [{ position: 30, label: 'Loading End Date' }]
+    @UI.lineItem:       [{ position: 30, label: 'Loading End Date' }]
+    endDate;
+    
+
+    @UI.identification: [{ position: 40, label: 'Shift' }]
+    Shift;
+
+    @UI.identification: [{ position: 50, label: 'Loaded By' }]
+    LoadedBy;
+
+    @UI.identification: [{ position: 60, label: 'Cycle Status' }]
+    @UI.lineItem:       [{ position: 40, label: 'Status' }]
+    CycleStatus;
+
+    @UI.identification: [{ position: 70, label: 'Number of Items' }]
+    NumberOfItems;
+    
+}

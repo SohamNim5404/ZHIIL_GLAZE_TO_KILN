@@ -1,0 +1,9 @@
+CLASS zbp_i_kiln_hdr DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_kiln_hdr.
+protected section.
+private section.
+ENDCLASS.
+
+
+
+CLASS ZBP_I_KILN_HDR IMPLEMENTATION.
+ENDCLASS.

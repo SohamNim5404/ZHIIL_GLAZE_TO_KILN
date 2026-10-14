@@ -1,0 +1,91 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Kiln Cycle',
+    typeNamePlural: 'Kiln Cycles',
+    title: {
+      type: #STANDARD,
+      value: 'ItemNo'
+    }
+  }
+}
+annotate entity ZC_KILN_ITM with
+{
+
+    @UI.facet: [
+      {
+        id: 'ItemDetails',
+        purpose: #STANDARD,
+        type: #IDENTIFICATION_REFERENCE,
+        label: 'Serial Number Details',
+        position: 10
+      }
+    ]
+
+    @UI.lineItem: [
+      { position: 10, label: 'Item No' }
+    ]
+    @UI.identification: [
+      { position: 10, label: 'Item No' }
+    ]
+    ItemNo;
+    
+    
+    /* 3. Loading Date */
+    @UI.selectionField: [{ position: 15 }]
+    @UI.identification: [{ position: 15, label: 'Loading Date' }]
+    @UI.lineItem:       [{ position: 15, label: 'Loading Date' }]
+    loadingdate;
+    
+
+    @UI.lineItem: [
+      { position: 20, label: 'Kiln Material' }
+    ]
+    @UI.identification: [
+      { position: 20, label: 'Kiln Material' }
+    ]
+    KilnMaterial;
+
+    @UI.lineItem: [
+      { position: 30, label: 'Glazed Material' }
+    ]
+    @UI.identification: [
+      { position: 30, label: 'Glazed Material' }
+    ]
+    GlazedMaterial;
+    
+       @UI.lineItem: [
+      { position: 35, label: 'Kiln Batch No' }
+    ]
+    @UI.identification: [
+      { position: 35, label: 'Kiln Batch No' }
+    ]
+    KilnBatchNo;
+
+    @UI.lineItem: [
+      { position: 40, label: 'Glazed Batch No' }
+    ]
+    @UI.identification: [
+      { position: 40, label: 'Glazed Batch No' }
+    ]
+    GlazedBatchNo;
+    
+        @UI.lineItem: [
+      { position: 50, label: 'Kiln Serial Number' }
+    ]
+    @UI.identification: [
+      { position: 50, label: 'Kiln Serial Number' }
+    ]
+    KilnSerialNo;
+    
+
+    @UI.lineItem: [
+      { position: 60, label: 'Glazed Serial Number' }
+    ]
+    @UI.identification: [
+      { position: 60, label: 'Glazed Serial Number' }
+    ]
+    GlazedSerialNo;
+
+
+}

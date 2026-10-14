@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZKILN_MSG</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class for Glaze to Kiln</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Cannot read kiln item for validation; reload the draft and try again.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT> Item &amp;1: &amp;2 serial &amp;3 is assigned to OPEN/CLOSED kiln cycle &amp;4.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Item &amp;1: &amp;2 material &amp;3, batch &amp;4 has a conflicting cycle assignment.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Item &amp;1: enter Kiln Material or Glazed Material.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Item &amp;1: Glazed Material must have production supervisor ZP6 or YP6.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT> Item &amp;1: Kiln Material must have production supervisor ZP7 or YP7.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Item &amp;1: enter Glazed Material and Glazed Batch.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Item &amp;1: stock lookup failed for material &amp;2, batch &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Item &amp;1: no positive stock for material &amp;2, batch &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Item &amp;1: enter Glazed Material, Batch and Serial Number.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Item &amp;1: serial &amp;2 was not found for material &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Item &amp;1: serial &amp;2 has no batch assigned in stock.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Item &amp;1: serial &amp;2 does not belong to batch &amp;3.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZKILN_MSG</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT> Item &amp;1: serial lookup failed for material &amp;2, serial &amp;3, batch &amp;4.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

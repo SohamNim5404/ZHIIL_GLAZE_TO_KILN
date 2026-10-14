@@ -1,0 +1,7 @@
+@EndUserText.label: 'Kiln Cycle Service'
+define service ZSD_KILN_HDR {
+  expose ZC_KILN_HDR      as KilnHeader;
+  expose ZC_KILN_ITM      as KilnItem;
+  expose ZI_KILN_MAT_VH   as MaterialVH;
+  expose ZI_KILN_BATCH_VH as BatchVH;
+}
